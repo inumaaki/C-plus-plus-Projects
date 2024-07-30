@@ -2,7 +2,8 @@
 
 ## Features
 - Perform both simple and scientific calculations.
-- Press keys from 1 to 12 to perform respective functions.
+- Press keys a/A, s/S, m/M, d/D, & from 1 to 9 to perform respective functions.
+
 - **Simple Basic Maths:**
   - Addition (+)
   - Subtraction (-)
