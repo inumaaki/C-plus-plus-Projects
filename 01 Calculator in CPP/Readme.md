@@ -2,21 +2,24 @@
 
 ## Features
 - Perform both simple and scientific calculations.
-- Press keys from 1 to 12 to perform respective functions.
+- Press keys a/A, s/S, m/M, d/D, & from 1 to 9 to perform respective functions.
+
 - **Simple Basic Maths:**
   - Addition (+)
   - Subtraction (-)
   - Multiplication (*)
   - Division (/)
+    
 - **Scientific Calculations:**
   - Sine (sin)
   - Cosine (cos)
   - Tangent (tan)
   - Logarithm (log)
   - Base Logarithm (base log)
-  - Power (power)
+  - Power/Exponentiation (power)
   - Square (square)
   - Square Root (square root)
+  - nth Root of a Number
 
 ## Installation
 1. Clone the repository:
@@ -42,38 +45,41 @@ g++ -o calculator calculator.cpp
 2. Follow the on-screen instructions to perform calculations.
 
 ##  Key Functions
-- Press 1 for Addition
-- Press 2 for Subtraction
-- Press 3 for Multiplication
-- Press 4 for Division
-- Press 5 for Sine
-- Press 6 for Cosine
-- Press 7 for Tangent
-- Press 8 for Logarithm
-- Press 9 for Base Logarithm
-- Press 10 for Power
-- Press 11 for Square
-- Press 12 for Square Root
+- Press (a/A) for Addition
+- Press (s/S) for Subtraction
+- Press (m/M) for Multiplication
+- Press (d/D) for Division
+- Press 1 for Sine
+- Press 2 for Cosine
+- Press 3 for Tangent
+- Press 4 for Logarithm
+- Press 5 for Base Logarithm
+- Press 6 for Power
+- Press 7 for Square
+- Press 8 for Square Root
+- Press 9 for nth Root of a Number
 
 ## Example
 ```
 Enter the operation you want to perform: 
-1. Addition
-2. Subtraction
-3. Multiplication
-4. Division
-5. Sine
-6. Cosine
-7. Tangent
-8. Logarithm
-9. Base Logarithm
-10. Power
-11. Square
-12. Square Root
-Your choice: 1
-Enter first number: 10
-Enter second number: 5
-Result: 15
+(a/A) - Addition
+(s/S) - Subtraction
+(m/M) - Multiplication
+(d/D) - Division
+1. Sine
+2. Cosine
+3. Tangent
+4. Logarithm
+5. Base Logarithm
+6. Power
+7. Square
+8. Square Root
+9. nth Root of a Number
+
+Your choice: a
+Enter value of 1st number: 10
+Enter value of 2nd number: 5
+The sum of two numbers is: 15
 ```
 
 ## Contributing
