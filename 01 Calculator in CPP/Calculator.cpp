@@ -347,6 +347,10 @@ int main() {
 				cout<<"***********************\n";
 				flag = false;
 				break;
+				
+			default:
+				cout<<"COMMAND NOT FOUND!\n";
+				break;
 		}
 	}
 
