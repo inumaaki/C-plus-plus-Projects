@@ -272,8 +272,8 @@ int main() {
 
 	while(flag) {
 		cout<<"_____________________\n";
-		cout<<"Press (h) for help\n";
-		cout<<"Press (e) for exit\n";
+		cout<<"Press (h/H) for help\n";
+		cout<<"Press (e/E) for exit\n";
 		cout<<"_____________________\n";
 		cout<<"Select Function: ";
 		cin>>type;
