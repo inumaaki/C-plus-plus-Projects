@@ -5,6 +5,7 @@
 #include<string.h>
 using namespace std;
 
+// Converts from USD -> PKR
 void USD_PKR() {
 	system("cls");
 	double currentUSD_PKR = 279.00;
@@ -38,6 +39,7 @@ void USD_PKR() {
 	}
 }
 
+// Converts from PKR -> USD
 void PKR_USD() {
 	system("cls");
 	double currentPKR_USD = 0.0036;
@@ -71,6 +73,7 @@ void PKR_USD() {
 	}
 }
 
+// Converts from USD -> INR
 void USD_INR() {
 	system("cls");
 	double currentUSD_INR = 83.68;
@@ -104,6 +107,7 @@ void USD_INR() {
 	}
 };
 
+// Converts from INR -> USD
 void INR_USD() {
 	system("cls");
 	double currentINR_USD = 0.012;
@@ -137,6 +141,7 @@ void INR_USD() {
 	}
 };
 
+// Converts from USD -> GBP
 void USD_GBP() {
 	system("cls");
 	double currentUSD_GBP = 0.78;
@@ -170,6 +175,7 @@ void USD_GBP() {
 	}
 };
 
+// Converts from GBP -> USD
 void GBP_USD() {
 	system("cls");
 	double currentGBP_USD = 1.28;
@@ -203,6 +209,7 @@ void GBP_USD() {
 	}
 };
 
+// Converts from USD -> RUB
 void USD_RUB() {
 	system("cls");
 	double currentUSD_RUB = 84.99;
@@ -236,6 +243,7 @@ void USD_RUB() {
 	}
 };
 
+// Converts from RUB -> USD
 void RUB_USD() {
 	system("cls");
 	double currentRUB_USD = 0.012;
@@ -269,6 +277,7 @@ void RUB_USD() {
 	}
 };
 
+// Converts from USD -> CNY
 void USD_CNY() {
 	system("cls");
 	double currentUSD_CNY = 7.22;
@@ -302,6 +311,7 @@ void USD_CNY() {
 	}
 };
 
+// Converts from CNY -> USD
 void CNY_USD() {
 	system("cls");
 	double currentCNY_USD = 0.14;
@@ -335,6 +345,7 @@ void CNY_USD() {
 	}
 };
 
+// Custom Exchange, enter your desired Currency & It's rate to get the conversion.
 void customEXC() {
 	system("cls");
 	cout<<"\t-- CUSTOM EXCHANGE --\n\n";
@@ -355,11 +366,18 @@ void customEXC() {
 	cout<<"\tEnter the Cost of Conversion: ";
 	float currencyExcAm;
 	cin>>currencyExcAm;
-	cout<<"\t\t1"<<currencyAvail<<" = "<<currencyExcAm<<currencyExc<<"\n";
+	cout<<"\t\t1"<<currencyAvail<<" = "<<currencyExcAm<<currencyExc<<"\n\n";
 	
+	cout<<"Enter the amount(in "<<currencyAvail<<") you want in "<<currencyExc<<": ";
+	float currencyCon;
+	cin>>currencyCon;
 	
+	float currencyConverted;
+	currencyConverted = currencyCon * currencyExcAm;
+	cout<<"Amount in "<<currencyExc<<" is: "<<currencyConverted<<currencyExc<<"\n";
 };
 
+// List all the exchanges available in the program
 void exchangesAvailable() {
 	system("cls");
 	cout<<"\t------ CURRENCY EXCHANGES AVAILABLE ------\n";
@@ -378,6 +396,7 @@ void exchangesAvailable() {
 	cout<<"\t |-------------------------------------|\n";
 }
 
+// It will tell us about that which key will perform which function.
 void help() {
 	system("cls");
 	cout<<"\t     -------- [H][E][L][P] --------\n";
@@ -393,6 +412,7 @@ void help() {
 	cout<<"\t Press '0' : CNY -> USD (1CNY = 0.14$\n\n";
 	cout<<"\t Press 'c/C' : CUSTOM EXCHANGE\n\n";
 	cout<<"\t Press 'h/H' : Help\n";
+	cout<<"\t Press 'x/X' : Clear Screen\n";
 	cout<<"\t Press 'a/A' : List available exchanges\n";
 	cout<<"\t Press 'e'E : Exit Program\n";
 }
@@ -405,6 +425,7 @@ int main() {
 		cout<<"_____________________\n";
 		cout<<"Press (a/A) List all available exchanges\n";
 		cout<<"Press (h/H) for help\n";
+		cout<<"Press (x/X) to Clear Screen\n";
 		cout<<"Press (e/E) for exit\n";
 		cout<<"_____________________\n";
 		cout<<"ENTERT SELECTION: ";
@@ -466,18 +487,21 @@ int main() {
 			case 'H':
 				help();
 				break;
+				
+			case 'x':
+			case 'X':
+				system("cls"); // It'll clear the screen for easy reading.
+				break;
 
 			case 'e':
 			case 'E':
-				cout<<"EXITING PROGRAM";
+				cout<<"EXITING PROGRAM"; // It exits the program.
 				flag = false;
 				break;
 
 			default:
-				cout<<"COMMAND NOT FOUND!\n";
+				cout<<"COMMAND NOT FOUND!\n"; // It'll return an error if wrong function key is pressed.
 				break;
 		}
 	}
-//	exchangesAvailable();
-//	help();
 }
