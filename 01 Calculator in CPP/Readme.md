@@ -1,5 +1,7 @@
 # Calculator in C++
 
+![C-plus-plus-Projects](https://socialify.git.ci/evilurl/C-plus-plus-Projects/image?forks=1&issues=1&language=1&name=1&owner=1&pattern=Circuit%20Board&pulls=1&stargazers=1&theme=Dark)
+
 ## Features
 - Perform both simple and scientific calculations.
 - Press keys a/A, s/S, m/M, d/D, & from 1 to 9 to perform respective functions.
