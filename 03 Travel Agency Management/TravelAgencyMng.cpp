@@ -4,7 +4,6 @@
 #include<iomanip>
 using namespace std;
 
-
 struct agency{
 	string Destination;
 	string dateFrom;
