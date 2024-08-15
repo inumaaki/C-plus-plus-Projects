@@ -4,6 +4,7 @@
 #include<iomanip>
 using namespace std;
 
+// Travel Agecncy Structure
 struct agency {
 	int num;
 	string Destination;
@@ -12,6 +13,7 @@ struct agency {
 	int Price;
 };
 
+// Display specific plans
 void displayAgency(agency pkg) {
 	cout<<"PKG No. "<<pkg.num<<endl;
 	cout<<"Destination: "<<pkg.Destination<<endl;
@@ -20,12 +22,15 @@ void displayAgency(agency pkg) {
 	cout<<"Price: "<<pkg.Price<<endl;
 }
 
+// Displat list of places which Agency provides
 void places(agency places) {
 	cout<<places.num<<". ";
 	cout<<places.Destination<<endl;
 }
 
+// Main function
 int main() {
+	// List of plans provided by the agency
 	agency plan1{1, "Kallar Kahar", "06-Aug-24", "10-Aug-24", 7000};
 	agency plan2{2, "Murree", "10-Aug-24", "15-Aug-24", 10000};
 	agency plan3{3, "Naran Kaghan", "15-Aug-24", "20-Aug-24", 20000};
@@ -39,11 +44,12 @@ int main() {
 	bool flag = true;
 
 	while(flag) {
-		cout<<"PRESS 'h/H' for Help!\n";
-		cout<<"PRESS 'x/X' for Clear Screen\n";
-		cout<<"PRESS 'e/E' to Exit\n";
-		cout<<"PRESS 0 to Go Back\n";
-		cout<<"Enter your choice: ";
+		cout<<"PRESS 'h/H' for Help!\n"; // provides list of places
+		cout<<"PRESS 'x/X' for Clear Screen\n"; // Clears screen
+		cout<<"PRESS 'e/E' to Exit\n"; // Exits the program
+		cout<<"PRESS 'b/B' to Go Back\n"; // Returns to the main menu
+		cout<<"PRESS 'n/N' to Go Next\n"; // Navigates to the next plan
+		cout<<"Enter your choice: "; // enter the option of user's choice
 		cin>>choice;
 
 
